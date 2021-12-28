@@ -20,7 +20,7 @@ berserk
         :alt: Documentation Status
 
 
-Python client for the `Lichess API`_.
+Python client for the `Lichess API`_ (modified).
 
 .. _Lichess API: https://lichess.org/api
 
@@ -95,6 +95,7 @@ Most if not all of the API is available:
     client.board.stream_incoming_events
     client.board.seek
     client.board.stream_game_state
+    client.board.stream_tv_game
     client.board.make_move
     client.board.post_message
     client.board.abort_game
@@ -114,6 +115,7 @@ Most if not all of the API is available:
     client.bots.decline_challenge
 
     client.tournaments.get
+    client.tournaments.get_tournament
     client.tournaments.create
     client.tournaments.export_games
     client.tournaments.stream_results
